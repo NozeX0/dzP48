@@ -1,0 +1,15 @@
+@model dz_4.Models.CreateCategoryModel
+
+<h2>Create Category</h2>
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Title">Title</label>
+        <input asp-for="Title" />
+        <span asp-validation-for="Title" style="color:red"></span>
+    </div>
+    <div>
+        <label asp-for="Description">Description</label>
+        <input asp-for="Description" />
+    </div>
+    <button type="submit">Create</button>
+</form>

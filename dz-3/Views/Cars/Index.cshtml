@@ -1,0 +1,9 @@
+@model IEnumerable<dz_3.Models.Car>
+
+<h2>Car Catalog</h2>
+<ul>
+    @foreach (var car in Model)
+    {
+        <li>@car.Brand @car.Model - $@car.Price</li>
+    }
+</ul>
